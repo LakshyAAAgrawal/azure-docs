@@ -150,7 +150,7 @@ mkdir ~/mycontainer
 To mount BlobFuse, run the following command with your user. This command mounts the container specified in '/path/to/fuse_connection.cfg' onto the location '/mycontainer'.
 
 ```bash
-blobfuse ~/mycontainer --tmp-path=/mnt/resource/blobfusetmp  --config-file=/path/to/fuse_connection.cfg -o attr_timeout=240 -o entry_timeout=240 -o negative_timeout=120
+blobfuse ~/mycontainer --tmp-path=/path/to/temp/directory  --config-file=/path/to/fuse_connection.cfg -o attr_timeout=240 -o entry_timeout=240 -o negative_timeout=120
 ```
 
 > [!NOTE]
